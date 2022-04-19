@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+*{ 
+    font-family:"Raleway",sans-serif; }
+
+body{
+	margin-left: 50px;
+}
+/* DEBUT NAV */
+nav{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:  space-between;
+   
+}
+
+.links{
+	border-bottom:  2.5px solid grey;
+	display: flex;
+	justify-content:  space-between;
+	
+}
+
+.links a{
+	font-size: 16px;
+	text-decoration :none;
+	color :#000;
+}
+
+#link {
+	color: rgb(0, 101, 252);
+}
+/* FIN DU NAV */
+/*TITRE*/
+.title h1{
+    margin-top: 20px;
+    margin-bottom: -7px;
+    font-weight :bold;
+    font-size: 22px;
+}
+.title h2{
+	font-weight: initial;
+	font-size: 16px;
+	
+}
+/*FIN DU TITRE*/
+/* DEBUT DU FORMULAIRE */
+.form{
+	display: flex;
+}
+
+.form i{
+	padding-top :15px;
+	padding-left: 18px;
+	padding-right: 15px;
+	padding-bottom: 18px;
+	background-color: rgb(242, 242, 242);
+	border-radius: 16px 0 0 16px;
+	border: 1px solid rgb(242, 242, 242);
+	margin-right: -4px;
+}
+
+.form input{
+   padding: 40px;
+   padding-top: 17px;
+   padding-bottom: 17px;
+   border: 1px solid rgb(217,217,217);
+}
+
+.form input::placeholder{
+	font-size: 17px;
+}
+
+.form button{
+	padding: 17px;
+	padding-top: 13px;
+	padding-bottom: 14px;
+	background-color: rgb(0, 101, 252);
+	color: #fff;
+	margin-left: -6px;
+	font-weight: bold;
+	border-radius: 0 16px 16px 0;
+	border: 2px solid rgb(0, 101, 202);
+	font-size: 17px;
+
+}
+/* FIN DU FORMULAIRE */
+/* DEBUT DES FILTRES  */
+.filters{
+   display: flex;
+   gap : 20px;
+   align-items:  center;
+   flex-wrap: wrap;
+   font-weight: bold;
+   font-size: 20px;
+}
+
+.filters p{
+	font-size: 20px;
+}
+.filters .filter {
+	border:  2px solid lightgrey;
+	border-radius: 17px;
+}
+
+.filter i{
+	color: rgb(0, 101, 252);
+	background-color: rgb(222, 232, 252);
+	padding: 12px;
+	border-radius: 50%;
+	margin: -3px;
+
+}
+
+.filter span {
+	padding: 18px;
+	font-size: 18px;
+}
+
+
+/* FIN DES FILTRES */
+/*info*/
+.info{
+	display: flex;
+	align-items:  center;
+	gap: 18px;
+	margin-top: 20px;
+}
+
+.info i{
+	color: rgb(0, 101, 252);
+	height: 8px;
+	width: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border:  1px solid lightgrey;
+	padding: 6px;
+	border-radius: 50%;
+}
+.info p{
+	font-size: 18px;
+}
+/* fin info */
+/*DEBUT HEBERGEMENTS*/
+.hostings 
+{ 
+	display: inline-block;
+	flex-wrap: wrap;
+   background-color: rgb(242, 242, 242);
+   padding: 25px;
+   border-radius: 30px;
+
+
+ }
+
+.hostings .hosting{
+	display: flex;
+	flex-wrap: wrap;
+	grid-gap: 20px;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+}
+
+.hostings .hosting .inn {
+	margin-bottom: 40px;
+	background-color: #fff;
+	border-radius: 15px;
+	padding: 5px;
+}
+
+.hostings .hosting .inn img{
+	border-radius: 15px 15px 0 0;
+	height: 140px;
+	width: 210px;
+	margin-bottom: -7px;
+
+}
+
+.hostings .hosting .inn h2{
+	font-weight: bold;
+	font-size: 16px;
+	margin-bottom: -10px;
+}
+
+.hostings .hosting .inn h3{
+	font-size: 14px;
+	margin-bottom: 2px;
+}
+
+.hostings .hosting .inn .note{
+	color: blue;
+}
+
+.hostings a{
+	text-decoration: none;
+	font-weight: bold;
+	color: #000;
+
+}
+.blue{
+	color: rgb(0, 101, 252);
+}
+
+.grey{
+	color: rgb(217, 217,217);
+}
+/*FIN DES HEBERGEMENTS*/
+/* LES PLUS POPULAIRES */
+
+.populars {
+	display: inline-block;
+	background-color: rgb(242,242, 242);
+	border-radius: 15px;
+
+}
+
+.populars .popular {
+	background-color: #fff;
+	display: flex;
+}
+.populars .popular .hostel img{
+	height: 100px;
+}
+
+.populars .popular .hostel h2{
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.populars .popular .hostel h3{
+	font-size: 14px;
+
+}
+/* FIN DES PLUS POPULAIRES */
+
+/* DEBUT ACTIVITES */
+
+
+/* FIN DES ACTIVITES */
