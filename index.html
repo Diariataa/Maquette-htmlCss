@@ -1,28 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
     <meta charset="utf-8">
     <link rel ="stylesheet" href="styles.css"/>
-	<meta name = "viewport" content = "width-device-width", initial-scale=1.0>
+	<meta name = "viewport" content = "width-device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
-	<tiltle></tiltle>
+	<title> Booki </title>
 </head>
 <body>
 	<!--HEADER-->
 	<header>
 		<nav>
 			<div class ="logo">
-			<img src="Booki.png" alt="BOOKI LOGO" height="45"/>
+			<img src="images/Booki.png" alt="BOOKI LOGO" height="45"/>
 			</div>
 			<div class ="links">
-				<a id ="link" href=""/>Hébergements</a>
-				<a href="">Activités</a>
+				<a href="#hebergement">Hébergements</a>
+				<a href="#activite">Activités</a>
 			</div>
 		</nav>
 	</header>
 	<!--FIN DU HEADER-->
 	<!-- SEARCH-->
-
+   <main>
 	<div class="title">
 	    <h1> Trouvez votre hébergement pour des vacances de rêve</h1>
 		<h2> En plein centre ville ou en pleine nature</h2>
@@ -31,7 +31,7 @@
 				<form>
 			<p> 
 			<i class="fa-solid fa-location-dot"></i>
-			<input type ="text" placeholder="Marseille, France" /> <button>Rechercher</button></p>
+			<input type ="text" placeholder="Marseille, France" /> <button>Rechercher</button> <i class="fa-solid fa-magnifying-glass"></i></p>
 		</form>
 	        </div>
 	</div>        
@@ -39,7 +39,7 @@
 	
 		<!--FILTRES-->
 	<div class="filters">
-	<p>Filtres</p>
+	<p class="nomFiltre">Filtres</p>
 	<div class =filter>
 	<i class="fa-solid fa-money-bill-wave"></i>
 	<span>Economique</span>
@@ -65,11 +65,14 @@
   </div>
   <!--fin info-->
   <!--DEBUT SECTION HEBERGEMENTS A MARSEILLE-->
+  <div class=" apart">
   <section class="hostings">
-  	<h1> Hébergements à Marseille</h1>
+  	<h2 id="hebergement"> Hébergements à Marseille</h2>
   	<div class="hosting">
   		<div class="inn">
-  			<img src="marcus-loke.jpg" alt="" >
+  		<div class="img">	
+  			<img src="images/marcus-loke.jpg" alt="Auberge La Cannebière" >
+  		</div>
   			<h2> Auberge La Cannebière</h2>
   			<h3> Nuit à partir de 25€</h3>
   			<div class="note">
@@ -81,7 +84,9 @@
   		    </div>
   		</div>
   		<div class="inn">
-  			<img src="fred-kleber.jpg" alt="">
+  			<div class="img">
+  			<img src="images/fred-kleber.jpg" alt="Hôtel La Port">
+  		</div>
   			<h2> Hôtel La port</h2>
   			<h3> Nuit à partir de 52€</h3>
   			<div class="note">
@@ -93,7 +98,9 @@
   		    </div>
   		</div>
   		<div class="inn">
-  			<img src="reisetopia.jpg" alt="">
+  			<div class="img">
+  			<img src="images/reisetopia.jpg" alt="Hôtel Les mouettes">
+  		</div>
   			<h2> Hôtel Les mouettes</h2>
   			<h3> Nuit à partir de 76€</h3>
   			<div class="note">
@@ -105,7 +112,9 @@
   		    </div>
   		</div>
   		<div class="inn">
-  			<img src="annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="" >
+  			<div class="img">
+  			<img src="images/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt=" Hôtel de la mer" >
+  		</div>
   			<h2> Hôtel de la mer</h2>
   			<h3> Nuit à partir de 46€</h3>
   			<div class="note">
@@ -117,7 +126,9 @@
   		    </div>
   		</div>
   		<div class="inn">
-  			<img src="nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="" >
+  			<div class ="img">
+  			<img src="images/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt=" Auberge le panier" >
+  		</div>
   			<h2> Auberge le Panier</h2>
   			<h3> Nuit à partir de 23€</h3>
   			<div class="note">
@@ -129,7 +140,9 @@
   		    </div>
   		</div>
   		<div class="inn">
-  			<img src="febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="">
+  			<div class="img">
+  			<img src="images/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt=""Hôtel chez Amina>
+  		</div>
   			<h2> Hôtel chez Amina</h2>
   			<h3> Nuit à partir de 96€</h3>
   			<div class="note">
@@ -142,16 +155,19 @@
   		</div>
   	</div>
   		<a href="">Afficher plus</a>
-   	</div>
+ 
   </section>
   <!--FIN HEBERGEMENTS-->
 
   <!-- DEBUT POPULAIRE-->
   <section class="populars">
-  		<h1> Les plus populaires</h1>
+  	<div class="chart">  		<h2> Les plus populaires</h2>
+  		<i class="fas fa-chart-line"></i>
+  	</div>
   		<div class="popular">
   			<div class="hostel">
-  				<img src="emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="" >
+  				<img src="images/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt=" Hôtrl Le soleil du matin" >
+  				<div class="right">
   				<h2> Hôtel Le soleil du matin </h2>
   				<h3> Nuit à partie de 128€</h3>
   				<div class="note">
@@ -161,21 +177,25 @@
   			    <i class="fa-solid fa-star blue"></i>
   			    <i class="fa-solid fa-star blue"></i>
   		        </div>
-  			</div>
-  			<div class="hostel">
-  				<img src="aw-creative-VGs8z60yT2c-unsplash.jpg" alt="">
-  				<h2> Au coeur de l'eau  </h2>
-  				<h3> Nuit à partie de 71€</h3>
-  				<div class="note">
+  		    </div>
+  		    </div>
+            <div class="hostel">
+  				<img src="images/aw-creative-VGs8z60yT2c-unsplash.jpg" alt=" Au coeur de l'eau" >
+  				<div class ="right">
+    			<h2> Au coeur de l'eau  </h2>
+  			    <h3> Nuit à partie de 71€</h3>
+  			    <div class="note">
   			    <i class="fa-solid fa-star blue"></i>
   			    <i class="fa-solid fa-star blue"></i>
   			    <i class="fa-solid fa-star blue"></i>
   		        <i class="fa-solid fa-star blue"></i>
   			    <i class="fa-solid fa-star grey"></i>
   		        </div>
-  			</div>
-  			<div class="hostel">
-  				<img src="febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="">
+  		     </div>
+  		    </div>
+            <div class="hostel">
+  				<img src="images/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt=" Hôtel Tout bleu et Blanc" >
+  				<div class="right">
   				<h2> Hôtel Tout bleu et Blanc </h2>
   				<h3> Nuit à partie de 68€</h3>
   				<div class="note">
@@ -185,45 +205,53 @@
   			    <i class="fa-solid fa-star blue"></i>
   			    <i class="fa-solid fa-star grey"></i>
   		        </div>
+  		    </div>
   			</div>
+  	
+  		</div>
   </section>
+</div>
   <!-- fin de populaire-->
 
   <!-- debut des activités-->
 
   <section class="activities">
-  	<h1> Activités à Marseille</h1>
-  	<div>
-      <div>
-      	<img src="" alt="">
+  	<h2 id="activite"> Activités à Marseille</h2>
+  	<div class="activity">
+      <div class="place large place1">
+      	<img src="images/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt=" Vieux Port" >
       	<h2> Vieux Port</h2>
       </div>
-      <div>
-      	<img src="" alt="">
+      <div class=" place medium place2">
+      	<img src="images/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues" >
       	<h2> Fort de Pomègues</h2>
       </div>
-      <div>
-      	<img src="" alt="">
+      <div class=" place small place3">
+      	<img src="images/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Iles du Frioul">
       	<h2> Iles du Frioul</h2>
       </div>
-      <div>
-      	<img src="" alt="">
+      <div class="place large place4">
+      	<img src="images/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
       	<h2> Parc National des Calanques</h2>
       </div>
-      <div>
-      	<img src="" alt="">
+      <div class="place small place5">
+      	<img src="images/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde" >
       	<h2> Notre-Dame-de-la-Garde</h2>
       </div>
-      <div>
-      	<img src="" alt="">
+      <div class=" place medium place6">
+      	<img src="images/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp" >
       	<h2> Parc Longchamp</h2>
       </div>
     </div>
   </section>
+
+ 
   <!-- fin des activites-->
+</main>
   <!-- FOOTER -->
-  <footer>
-  	<div>
+  <footer class=" ">
+      <div class="footer"	>
+  	<div class="foot">
   		<h3> A propos </h3>
   		<ul>
   			<li> Fonctionnement du site</li>
@@ -231,21 +259,21 @@
   			<li> Données et confidentialité</li>
   	    </ul>
   	</div>
-  	<div>
+  	<div class="foot">
   		<h3> Nos hébergements </h3>
   		<ul>
   			<li> Charte qualité</li>
   			<li> Soummettre votre hôtel</li>
-  			<
-  	    </ul>
+        </ul>
   	</div>
-  	<div>
+  	<div class="foot">
   		<h3> Assistance </h3>
   		<ul>
   			<li> Centre d'aide</li>
   			<li> Nous contacter</li>
   	    </ul>
   	</div>
+  </div>
   </footer>
   <!-- FOOTER END -->
 </body>
